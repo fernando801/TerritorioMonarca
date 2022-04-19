@@ -17,8 +17,19 @@ a {
   box-sizing: border-box;
 }
 
+@layer components {
+  .pill {
+    @apply w-fit rounded-full bg-amber-500 py-1 px-4 text-center text-white;
+  }
+}
+
 @layer base {
-  h1, h2, h3, h4, h5, h6 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     @apply font-serif font-bold;
   }
 
@@ -45,5 +56,4 @@ a {
   h6 {
     @apply text-base sm:text-lg;
   }
-
 }
