@@ -1,0 +1,67 @@
+.menu{
+  @apply 
+    absolute 
+    top-full 
+    left-0 
+    z-40 
+
+    bg-amber-500 
+    w-full 
+    py-4 
+    text-lg 
+
+    lg:opacity-100 
+    lg:scale-y-100 
+    lg:relative 
+    lg:flex 
+    lg:gap-8 
+    lg:p-0
+    lg:w-auto  
+
+    transition-all 
+    origin-top
+    duration-200 
+    ease-linear;
+}
+
+.menu__item{
+  @apply 
+    container 
+    mx-auto 
+    rounded
+    block 
+    p-4 
+    lg:p-2 
+    hover:bg-amber-400 
+}
+
+.dropdown{
+  @apply 
+    lg:absolute 
+    lg:w-52
+    lg:left-1/2
+    lg:-translate-x-1/2
+    lg:bg-zinc-50 
+    lg:text-black 
+    lg:rounded 
+    lg:text-base
+    
+    lg:scale-y-0 
+    lg:opacity-0 
+    lg:transition-all 
+    lg:duration-200 
+    lg:origin-top 
+    lg:ease-linear
+}
+
+.menu__subitem{
+  @apply
+    container 
+    mx-auto 
+    rounded
+    block 
+    px-12 py-4
+    lg:px-4 lg:py-4 
+    hover:bg-amber-400 
+    lg:hover:text-white
+}
