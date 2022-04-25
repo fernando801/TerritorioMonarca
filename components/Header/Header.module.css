@@ -1,14 +1,17 @@
 .menu{
+  height: calc(100vh - 100%);
+
   @apply 
     absolute 
     top-full 
     left-0 
     z-40 
+    overflow-y-auto
+    lg:overflow-y-visible
 
     bg-amber-500 
     w-full 
-    py-4 
-    text-lg 
+    p-4 
 
     lg:opacity-100 
     lg:scale-y-100 
@@ -16,7 +19,8 @@
     lg:flex 
     lg:gap-8 
     lg:p-0
-    lg:w-auto  
+    lg:w-auto
+    lg:h-auto
 
     transition-all 
     origin-top
@@ -33,6 +37,7 @@
     p-4 
     lg:p-2 
     hover:bg-amber-400 
+    cursor-pointer
 }
 
 .dropdown{
@@ -64,4 +69,5 @@
     lg:px-4 lg:py-4 
     hover:bg-amber-400 
     lg:hover:text-white
+    cursor-pointer
 }

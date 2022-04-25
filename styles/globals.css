@@ -2,10 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
+  @apply bg-zinc-100;
 }
 
 a {
@@ -34,26 +41,27 @@ a {
   }
 
   h1 {
-    @apply text-4xl sm:text-5xl;
+    @apply leading-normal text-5xl;
   }
 
   h2 {
-    @apply text-3xl sm:text-4xl;
+    font-size: 1.875rem;
+    @apply leading-normal text-3xl sm:text-4xl;
   }
 
   h3 {
-    @apply text-2xl sm:text-3xl;
+    @apply leading-normal text-2xl sm:text-3xl;
   }
 
   h4 {
-    @apply text-xl sm:text-2xl;
+    @apply leading-normal text-xl sm:text-2xl;
   }
 
   h5 {
-    @apply text-lg sm:text-xl;
+    @apply leading-normal text-lg sm:text-xl;
   }
 
   h6 {
-    @apply text-base sm:text-lg;
+    @apply leading-normal text-base sm:text-lg;
   }
 }
