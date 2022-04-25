@@ -38,7 +38,7 @@ export default function Home() {
       </section>
       <section>
         <div className='container mx-auto px-4 py-12'>
-          <h2 className='pill mx-auto px-8 py-1'> Nuestra Historia</h2>
+          <h2 className='text-center mx-auto px-8'> Nuestra Historia</h2>
           <div className='bg-whiete mx-auto mt-8 w-5/6 rounded-3xl bg-white p-8 text-center'>
             <p>
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos,

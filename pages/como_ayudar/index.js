@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import Image from 'next/image'
 import Header from '@/components/Header'
 
@@ -52,9 +53,11 @@ export default function ComoAyudar() {
               </p>
             </div>
           </div>
-          <div className='pill mx-auto mt-20 px-8 py-2 font-serif text-xl'>
-            Más Información
-          </div>
+          <Link href='/mariposa_monarca/'>
+            <div className='pill mx-auto mt-20 px-8 py-2 font-serif text-xl cursor-pointer hover:bg-amber-400 active:scale-95'>
+              Más Información
+            </div>
+          </Link>
         </div>
       </section>
       <section>
