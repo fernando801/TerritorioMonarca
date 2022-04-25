@@ -13,7 +13,7 @@ export default function Home() {
       </section>
       <section>
         <div className='container mx-auto px-4 py-28 text-center'>
-          <h1 className='mb-8'>Territorio Monarca</h1>
+          <h1 className='mb-8 text-5xl'>Territorio Monarca</h1>
           <p className='p-8'>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit
             qui vero beatae inventore aliquam veritatis autem maxime! Velit quo
