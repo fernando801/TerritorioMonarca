@@ -33,7 +33,7 @@ export default function ComoAyudar() {
       <section>
         <div className='container mx-auto px-8 py-16'>
           <h2 className='text-center'>Etapas del cilco</h2>
-          <div className='grid sm:grid-cols-2 gap-8 lg:gap-y-16 justify-items-center py-12'>
+          <div className='grid sm:grid-cols-2 xl:grid-cols-4 gap-8 lg:gap-y-16 justify-items-center py-12'>
             <CyclePhase title='Fase de Huevo' img='/images/guardianes_logo_bw.png'/>
             <CyclePhase title='Fase de Larva' img='/images/guardianes_logo_bw.png'/>
             <CyclePhase title='Fase de Crisalida' img='/images/guardianes_logo_bw.png'/>
