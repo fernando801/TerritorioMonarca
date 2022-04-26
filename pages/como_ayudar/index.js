@@ -7,8 +7,8 @@ export default function ComoAyudar() {
     <div>
       <Header />
       <section className='rounded-b-3xl bg-zinc-200'>
-        <div className='container relative mx-auto py-12 px-4'>
-          <h1 className='py-16 text-center'>¿Cómo Ayudar?</h1>
+        <div className='container relative mx-auto py-16 px-4'>
+          <h1 className='mx-auto py-4 text-center sm:mb-12'>¿Cómo Ayudar?</h1>
           <p className='px-6 py-2 text-justify'>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
             quibusdam delectus at unde impedit, aperiam optio repellendus

@@ -43,7 +43,7 @@ export default function MariposaMonarca() {
               adipisci nesciunt molestiae expedita unde placeat culpa!
             </KeyFact>
           </div>
-          <div className='bg-whiete mx-auto mt-16 w-5/6 rounded-3xl bg-white p-8 text-center'>
+          <div className='bg-whiete mx-auto mt-16 w-5/6 rounded-3xl bg-white p-8 text-center shadow'>
             <h2 className='mb-8 text-center'> Ciclo de Vida</h2>
             <p>
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos,

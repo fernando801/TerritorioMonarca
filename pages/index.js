@@ -26,13 +26,13 @@ export default function Home() {
         <div className='container relative mx-auto px-4 py-12'>
           <div className='absolute left-1/2 -top-16 mx-auto aspect-square w-52 lg:w-64 -translate-x-1/2 transform rounded-full bg-zinc-200'></div>
           <h2 className='pill mx-auto px-8 py-1 relative'>Creadores</h2>
-          <div className='mt-8 flex flex-wrap justify-center gap-8 relative'>
-            <div className='aspect-square w-36 sm:w-40 rounded-full bg-amber-500'></div>
-            <div className='aspect-square w-36 sm:w-40 rounded-full bg-amber-500'></div>
-            <div className='aspect-square w-36 sm:w-40 rounded-full bg-amber-500'></div>
-            <div className='aspect-square w-36 sm:w-40 rounded-full bg-amber-500'></div>
-            <div className='aspect-square w-36 sm:w-40 rounded-full bg-amber-500'></div>
-            <div className='aspect-square w-36 sm:w-40 rounded-full bg-amber-500'></div>
+          <div className='mt-8 flex flex-wrap justify-center gap-8 relative py-4'>
+            <div className='aspect-square w-36 sm:w-40 lg:w-48 rounded-full bg-amber-500'></div>
+            <div className='aspect-square w-36 sm:w-40 lg:w-48 rounded-full bg-amber-500'></div>
+            <div className='aspect-square w-36 sm:w-40 lg:w-48 rounded-full bg-amber-500'></div>
+            <div className='aspect-square w-36 sm:w-40 lg:w-48 rounded-full bg-amber-500'></div>
+            <div className='aspect-square w-36 sm:w-40 lg:w-48 rounded-full bg-amber-500'></div>
+            <div className='aspect-square w-36 sm:w-40 lg:w-48 rounded-full bg-amber-500'></div>
           </div>
         </div>
       </section>
