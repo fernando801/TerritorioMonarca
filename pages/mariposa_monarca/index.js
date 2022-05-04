@@ -15,8 +15,8 @@ export default function MariposaMonarca() {
         />
       </div>
       <section>
-        <div className='container relative mx-auto rounded-3xl bg-zinc-100 py-16 px-4 lg:-top-40 lg:pb-0'>
-          <h1 className='p-2 mb-12 lg:p-4'>Mariposa Monarca</h1>
+        <div className='container relative mx-auto rounded-3xl bg-zinc-100 pt-8 sm:pt-16 py-16 px-4 lg:-top-40 lg:pb-0'>
+          <h1 className='mb-6 sm:mb-12 p-2 lg:p-4'>Mariposa Monarca</h1>
           <div className='grid gap-4 lg:grid-cols-2'>
             <KeyFact title='Mariposa' img='/images/guardianes_logo_bw.png'>
               Lorem, ipsum dolor sit amet consectetur adipisicing elit.
@@ -46,10 +46,12 @@ export default function MariposaMonarca() {
           <div className='bg-whiete mx-auto mt-16 w-5/6 rounded-3xl bg-white p-8 text-center shadow'>
             <h2 className='mb-8 text-center'> Ciclo de Vida</h2>
             <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos,
-              officiis. Nam dolore consequatur fugit. Modi, nostrum cum. Labore
-              modi, amet fugiat laboriosam at, vel aliquid quis, earum cumque
-              explicabo natus.
+              Ciclo de vida (oruga, crisálida, mariposa, matusalén) La mariposa
+              monarca es un lepidóptero, lo cual significa que pasa por varias
+              etapas de desarrollo antes de llegar al estado adulto, o mejor
+              conocido como metamorfosis. Esta metamorfosis dura aproximadamente
+              de tres a cinco semanas, dependiendo completamente de las
+              condiciones ambientales.
             </p>
             <Link href='/mariposa_monarca/ciclo/'>
               <div className='pill mx-auto mt-12 cursor-pointer px-8 py-2 font-serif text-xl hover:bg-amber-400 active:scale-95'>

@@ -7,7 +7,7 @@ export default function Guardianes() {
     <div>
       <Header />
       <section>
-        <div className='container mx-auto px-4 py-16'>
+        <div className='container mx-auto px-4 pt-8 sm:pt-16 py-16'>
           <div className='mx-auto text-justify md:max-w-[800px]'>
             <h1 className='mx-auto py-4 text-center sm:mb-12'>
               ¿Qué es un Guardian Monarca?

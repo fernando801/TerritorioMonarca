@@ -7,13 +7,14 @@ export default function ComoAyudar() {
     <div>
       <Header />
       <section className='rounded-b-3xl bg-zinc-200'>
-        <div className='container relative mx-auto py-16 px-4'>
+        <div className='container relative mx-auto pt-8 sm:pt-16 py-16 px-4'>
           <h1 className='mx-auto py-4 text-center sm:mb-12'>¿Cómo Ayudar?</h1>
           <p className='px-6 py-2 text-justify'>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
-            quibusdam delectus at unde impedit, aperiam optio repellendus
-            molestiae non voluptatem in. Aliquid error earum vel iusto quidem
-            numquam laborum recusandae.
+            Es una estrategia para generar participación activa a nivel nacional
+            en la conservación del Patrimonio Natural de la República Mexicana.
+            Esta área está enfocada a la sociedad civil que no es parte de la
+            fundación en sí, pero tiene la inquietud de ayudar a la conservación
+            de la mariposa monarca.
           </p>
           <p className='px-6 py-2 text-justify'>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
@@ -36,25 +37,24 @@ export default function ComoAyudar() {
               <h2 className='text-center'>Misión</h2>
               <div className='my-2 rounded-full bg-black py-[2px]'></div>
               <p className='text-justify'>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Blanditiis sit repudiandae nulla temporibus ipsam. Sequi illum
-                quibusdam suscipit aperiam blanditiis magnam, accusamus officia
-                excepturi dolorum incidunt adipisci aliquam fugit molestias?
+                Que los habitantes de la República Mexicana se involucren
+                activamente en la conservación de la mariposa monarca y, por
+                ende, del medio ambiente a través de acciones y eventos
+                coordinados por la fundación.
               </p>
             </div>
             <div className='px-4'>
               <h2 className='text-center'>Visión</h2>
               <div className='my-2 rounded-full bg-black py-[2px]'></div>
               <p className='text-justify'>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Blanditiis sit repudiandae nulla temporibus ipsam. Sequi illum
-                quibusdam suscipit aperiam blanditiis magnam, accusamus officia
-                excepturi dolorum incidunt adipisci aliquam fugit molestias?
+                Tener 30,000 Guardianes Monarca en todos los estados de la
+                república por los que pasa la mariposa que ayuden activamente a
+                que llegue a los Santuarios ubicados en Michoacán.
               </p>
             </div>
           </div>
           <Link href='/mariposa_monarca/'>
-            <div className='pill mx-auto mt-20 px-8 py-2 font-serif text-xl cursor-pointer hover:bg-amber-400 active:scale-95'>
+            <div className='pill mx-auto mt-20 cursor-pointer px-8 py-2 font-serif text-xl hover:bg-amber-400 active:scale-95'>
               Más Información
             </div>
           </Link>
@@ -67,13 +67,17 @@ export default function ComoAyudar() {
               Conviertete en Guardian Monarca
             </h2>
             <p className='py-4 text-justify'>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam
-              mollitia at modi enim adipisci vero sint alias, ab similique
-              architecto aperiam officiis vel eum totam! Optio voluptatum dolor
-              placeat sint! Lorem ipsum, dolor sit amet consectetur adipisicing
-              elit. Praesentium accusantium non iste.
+              Para ser un Guardián Monarca se necesita más que simplemente la
+              inquietud, las acciones tienen que ir de la mano. Esto no quiere
+              decir que es un trabajo, cada quien hace lo que está dentro de sus
+              posibilidades y capacidades. Aquí te indicamos por donde empezar.
             </p>
-            <div className='bottom-[10%] mx-auto max-w-[400px] pt-10 md:absolute md:right-1/2 md:w-1/3 md:translate-x-1/2'>
+            <Link href='/como_ayudar/guardianes/'>
+              <div className='pill mx-auto mt-8 cursor-pointer px-8 py-2 font-serif text-xl hover:bg-amber-400 active:scale-95'>
+                Más Información
+              </div>
+            </Link>
+            <div className='mx-auto mt-10 max-w-[300px] md:max-w-[160px] lg:max-w-[210px]'>
               <Image
                 src='/images/guardianes_logo.png'
                 width={455}
