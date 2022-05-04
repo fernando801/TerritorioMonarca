@@ -9,24 +9,13 @@ export default function ComoAyudar() {
       <section className='rounded-b-3xl bg-zinc-200'>
         <div className='container relative mx-auto pt-8 sm:pt-16 py-16 px-4'>
           <h1 className='mx-auto py-4 text-center sm:mb-12'>¿Cómo Ayudar?</h1>
+          <h5 className='px-6 py-2'>Guardianes Monarca</h5>
           <p className='px-6 py-2 text-justify'>
             Es una estrategia para generar participación activa a nivel nacional
             en la conservación del Patrimonio Natural de la República Mexicana.
             Esta área está enfocada a la sociedad civil que no es parte de la
             fundación en sí, pero tiene la inquietud de ayudar a la conservación
             de la mariposa monarca.
-          </p>
-          <p className='px-6 py-2 text-justify'>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
-            ullam ipsam praesentium perferendis non omnis nisi est nam aliquam
-            corporis. Placeat, tenetur? Vero, facilis repellendus blanditiis
-            dicta veniam earum eveniet.
-          </p>
-          <p className='px-6 py-2 text-justify'>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
-            ullam ipsam praesentium perferendis non omnis nisi est nam aliquam
-            corporis. Placeat, tenetur? Vero, facilis repellendus blanditiis
-            dicta veniam earum eveniet.
           </p>
         </div>
       </section>

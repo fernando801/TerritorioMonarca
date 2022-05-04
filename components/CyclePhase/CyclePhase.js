@@ -3,7 +3,7 @@ import { BsXLg } from 'react-icons/bs'
 import Image from 'next/image'
 import Modal from '@/components/Modal'
 
-export default function CyclePhase({ title, img }) {
+export default function CyclePhase({ title, img, thumbnail, description }) {
   const [modal, setModal] = useState(false)
 
   return (
@@ -15,52 +15,29 @@ export default function CyclePhase({ title, img }) {
         <h2 className='mb-8 text-center'>{title}</h2>
         <div className='aspect-square rounded-3xl bg-amber-500 p-6'>
           <div className='relative h-full w-full'>
-            {img && <Image src={img} layout='fill' objectFit='contain' />}
+            {img && <Image src={thumbnail} layout='fill' objectFit='contain' />}
           </div>
         </div>
       </div>
       {modal && (
         <Modal>
-          <div className='max-w-5xl relative h-full rounded-3xl bg-white p-4 pt-16 md:pt-20'>
+          <div className='max-w-5xl relative max-h-full rounded-3xl bg-white px-4 pt-16 pb-8 md:pt-20'>
             <div
-              className='absolute top-4 right-4 rounded-2xl bg-amber-500 p-2 text-white'
+              className='absolute top-4 right-4 rounded-2xl bg-amber-500 p-2 text-white hover:bg-amber-400 active:scale-95 cursor-pointer'
               onClick={() => setModal(false)}
             >
               <BsXLg className='text-2xl md:text-3xl' />
             </div>
 
-            <div className='h-full overflow-auto '>
-              <h1>{title}</h1>
+            <div className='max-h-full overflow-auto'>
+              <figure className='relative w-full h-48 sm:h-72 lg:h-96 rounded-xl overflow-hidden mb-4'>
+                <Image src={img} layout='fill' objectFit='cover' />
+              </figure>
 
-              <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Tenetur recusandae, repellat odio ipsum modi, facere
-                perspiciatis iusto fugit quaerat molestias provident
-                voluptatibus odit cupiditate. Ab rerum accusamus ipsum neque
-                nostrum? Atque saepe repellat numquam! Facilis rerum, autem
-                alias dolore est aspernatur distinctio architecto cum dolores
-                iure mollitia, reiciendis nobis dolorum, repudiandae corrupti
-                commodi? Est eum exercitationem labore dolore nisi veritatis,
-                doloremque beatae tempora rem. Nihil, impedit delectus magnam
-                dolor doloremque eaque omnis nobis obcaecati repellat voluptas
-                debitis quas natus harum numquam dicta fugit quam neque ducimus
-                inventore consequuntur facere voluptatem dolore in beatae.
-                Deserunt praesentium inventore nesciunt cupiditate aspernatur
-                odio, minus aliquid aut iusto voluptas ex eum libero natus
-                reprehenderit. Distinctio illo doloremque expedita quidem
-                quisquam iste voluptatibus repudiandae, beatae mollitia
-                voluptates vel reiciendis, debitis deserunt deleniti hic nisi
-                aliquid possimus earum tenetur repellat nemo alias tempora
-                magnam! Voluptatum, veniam dolor suscipit ducimus vero enim
-                architecto commodi aliquid, iusto, reprehenderit ratione velit
-                aut perferendis earum odit voluptates. In voluptates odit earum
-                impedit inventore non iste vitae voluptatum voluptatem
-                necessitatibus recusandae fugit soluta distinctio nam, minima
-                dolor deserunt quos obcaecati eaque, cumque dolorum aliquam?
-                Aliquid culpa porro quia fuga exercitationem, sed cupiditate
-                voluptatum quod minima eaque unde numquam. Dolore, est
-                obcaecati?
-              </p>
+              <h1 className='py-2 sm:py-8 px-2'>{title}</h1>
+              {description.map( (paragraph, index) => (
+                <p key={`${index}`} className='p-2 text-justify'>{paragraph}</p>
+              ))}
             </div>
           </div>
         </Modal>
