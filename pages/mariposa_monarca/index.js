@@ -5,7 +5,7 @@ import KeyFact from '@/components/KeyFact'
 
 export default function MariposaMonarca() {
   return (
-    <div>
+    <>
       <Header />
       <div className='relative h-52 sm:h-72 md:h-80 lg:h-[32rem]'>
         <Image
@@ -92,6 +92,6 @@ export default function MariposaMonarca() {
           </div>
         </div>
       </section>
-    </div>
+    </>
   )
 }

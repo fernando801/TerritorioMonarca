@@ -5,7 +5,7 @@ import styles from './Header.module.css'
 
 export default function Header() {
 
-  const [ menuOpen, setMenuOpen ] = useState(false);
+  const [ menuOpen, setMenuOpen ] = useState(false)
 
   return (
     <header className='relative bg-amber-500'>
