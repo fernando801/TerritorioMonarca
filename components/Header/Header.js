@@ -26,7 +26,7 @@ export default function Header() {
                 <div><Link href='/como_ayudar/donar/'><a className={styles.menu__subitem}>Donar</a></Link></div>
               </div>
             </div>
-            <div><a className={styles.menu__item}>Productos</a></div>
+            <div><Link href='/productos/'><a className={styles.menu__item}>Productos</a></Link></div>
             <div><a className={styles.menu__item}>Jardínes</a></div>
             <div><a className={styles.menu__item}>Contacto</a></div>
             <div><a className={styles.menu__item}>Blog</a></div>

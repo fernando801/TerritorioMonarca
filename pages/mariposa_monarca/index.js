@@ -12,6 +12,7 @@ export default function MariposaMonarca() {
           src='/images/mariposa_monarca.jpg'
           layout='fill'
           objectFit='cover'
+          alt='mariposa monarca'
         />
       </div>
       <section>

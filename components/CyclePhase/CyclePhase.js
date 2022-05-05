@@ -31,7 +31,7 @@ export default function CyclePhase({ title, img, thumbnail, description }) {
 
             <div className='max-h-full overflow-auto'>
               <figure className='relative w-full h-48 sm:h-72 lg:h-96 rounded-xl overflow-hidden mb-4'>
-                <Image src={img} layout='fill' objectFit='cover' />
+                <Image src={img} layout='fill' objectFit='cover' alt={title}/>
               </figure>
 
               <h1 className='py-2 sm:py-8 px-2'>{title}</h1>

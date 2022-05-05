@@ -72,6 +72,7 @@ export default function ComoAyudar() {
                 width={455}
                 height={452}
                 layout='responsive'
+                alt='guardianes logo'
               />
             </div>
           </div>

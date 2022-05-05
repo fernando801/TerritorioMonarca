@@ -36,7 +36,7 @@ export default function Guardianes() {
       <section>
         <div className='container mx-auto px-4 py-16'>
           <div className='mx-auto w-full max-w-md p-8'>
-            <Image src='/images/guardianes_logo.png' width={452} height={455} />
+            <Image src='/images/guardianes_logo.png' width={452} height={455} alt='guardianes logo'/>
           </div>
           <Link href='/productos/'>
             <div className='pill mx-auto mt-4 cursor-pointer px-8 py-2 font-serif text-xl hover:bg-amber-400 active:scale-95'>
