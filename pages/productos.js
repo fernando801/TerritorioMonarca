@@ -7,19 +7,19 @@ import Product from '@/components/Product'
 const products = [
   {
     id: '1',
-    title: 'Bodem 1',
+    title: 'Bodem',
     img: '/images/products/bodem.png',
     icon: '/images/products/bodem.png',
-    price: 200.00,
+    price: 100.00,
     description:
       'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto quia animi eligendi est suscipit voluptatibus expedita harum optio? Dolor culpa tempore labore, nihil ut cumque vero beatae aut molestias consequatur.',
     link: 'https://www.mercadolibre.com.mx',
   },
   {
     id: '2',
-    title: 'Bodem 2',
-    img: '/images/products/bodem.png',
-    icon: '/images/products/bodem.png',
+    title: 'Paquete Monarca',
+    img: '/images/products/paquete_monarca.png',
+    icon: '/images/products/paquete_monarca.png',
     price: 200.00,
     description:
       'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto quia animi eligendi est suscipit voluptatibus expedita harum optio? Dolor culpa tempore labore, nihil ut cumque vero beatae aut molestias consequatur.',
@@ -27,10 +27,10 @@ const products = [
   },
   {
     id: '3',
-    title: 'Bodem 3',
-    img: '/images/products/bodem.png',
-    icon: '/images/products/bodem.png',
-    price: 200.00,
+    title: 'Especies Autorizadas',
+    img: '/images/products/especies_autorizadas.png',
+    icon: '/images/products/especies_autorizadas.png',
+    price: 300.00,
     description:
       'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto quia animi eligendi est suscipit voluptatibus expedita harum optio? Dolor culpa tempore labore, nihil ut cumque vero beatae aut molestias consequatur.',
     link: 'https://www.mercadolibre.com.mx',
@@ -47,8 +47,8 @@ export default function Productos() {
       <div>
         <Header />
       </div>
-      <div className='grid grid-cols-[100px_1fr] overflow-hidden md:grid-cols-[1fr_4fr] lg:grid-cols-[240px_1fr]'>
-        <div className='flex flex-col items-center justify-center overflow-hidden bg-red-500 py-4'>
+      <div className='container mx-auto grid grid-cols-[100px_1fr] overflow-hidden md:grid-cols-[1fr_4fr] lg:grid-cols-[240px_1fr]'>
+        <div className='flex flex-col items-center justify-center overflow-hidden'>
           <div className='h-fit w-full max-w-[200px] overflow-auto rounded-3xl bg-zinc-200'>
             {products.map((product) => (
               <div
@@ -67,7 +67,7 @@ export default function Productos() {
             ))}
           </div>
         </div>
-        <div className='relative overflow-hidden bg-cyan-500'>
+        <div className='relative overflow-hidden'>
           <Product {...product}/>
         </div>
       </div>
