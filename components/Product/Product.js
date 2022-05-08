@@ -8,7 +8,7 @@ export default function Product({ title, img, price, description, link }) {
         <Image src={img} layout='fill' objectFit='contain' alt='bodem' />
       </figure>
       <div className='max-h-full overflow-auto'>
-        <h1 className='py-2'>{title}</h1>
+        <h1 className='max-w-full overflow-auto py-2'>{title}</h1>
         <h2 className='py-2'>{`$${price}`}</h2>
         <a
           href={link}

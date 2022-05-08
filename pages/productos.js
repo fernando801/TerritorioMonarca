@@ -48,7 +48,7 @@ export default function Productos() {
         <Header />
       </div>
       <div className='container mx-auto grid grid-cols-[100px_1fr] overflow-hidden md:grid-cols-[1fr_4fr] lg:grid-cols-[240px_1fr]'>
-        <div className='flex flex-col items-center justify-center overflow-hidden'>
+        <div className='flex flex-col items-center justify-center overflow-hidden py-4'>
           <div className='h-fit w-full max-w-[200px] overflow-auto rounded-3xl bg-zinc-200'>
             {products.map((product) => (
               <div
