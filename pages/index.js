@@ -36,7 +36,6 @@ export default function Home() {
             <div className='aspect-square w-36 rounded-full bg-amber-500 sm:w-40 lg:w-48'></div>
             <div className='aspect-square w-36 rounded-full bg-amber-500 sm:w-40 lg:w-48'></div>
             <div className='aspect-square w-36 rounded-full bg-amber-500 sm:w-40 lg:w-48'></div>
-            <div className='aspect-square w-36 rounded-full bg-amber-500 sm:w-40 lg:w-48'></div>
           </div>
         </div>
       </section>

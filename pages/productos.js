@@ -43,12 +43,9 @@ export default function Productos() {
   const product = products.find( product => product.id === selectedProduct )
 
   return (
-    <div className='relative grid h-screen w-full grid-rows-[auto_auto_1fr]'>
+    <div className='relative grid h-screen w-full grid-rows-[auto_1fr]'>
       <div>
         <Header />
-      </div>
-      <div>
-        <h1 className='text-center py-12 text-7xl'>Productos</h1>
       </div>
       <div className='container mx-auto grid grid-cols-[100px_1fr] overflow-hidden md:grid-cols-[1fr_4fr] lg:grid-cols-[240px_1fr]'>
         <div className='flex flex-col items-center justify-center overflow-hidden py-4'>

@@ -24,7 +24,7 @@ export default function Guardianes() {
       </section>
       <section>
         <div className='container mx-auto px-8 text-center'>
-          <div className='mx-auto w-fit rounded-3xl bg-white py-8 px-16 shadow'>
+          <div className='mx-auto w-fit rounded-3xl bg-white py-8 px-16 shadow sm:my-8'>
             <h2 className='py-6'>Ya Somos</h2>
             <div>
               <p className='text-[5rem] font-bold text-amber-500'>117</p>
@@ -35,8 +35,27 @@ export default function Guardianes() {
       </section>
       <section>
         <div className='container mx-auto px-4 py-16'>
+          <div className='mx-auto text-justify md:max-w-[800px]'>
+            <h2 className='mx-auto py-4 text-center sm:mb-6'>
+              Paquetes Monarca
+            </h2>
+            <p className='py-2 px-6'>
+              Todos los Guardianes Monarca inician comprando su paquete. Este
+              incluye semillas, abono (Bodem), hidrogel, un manual, código de
+              activación para la app y un distintivo de Guardianes Monarca. La
+              intención es que sembrar la planta, se cuide y proporcione un
+              nuevo lugar a la mariposa para llegar, alimentarse y descansar
+              entre el caos de la ciudad. Para más información, favor de ir a la
+              sección de paquetes monarca
+            </p>
+          </div>
           <div className='mx-auto w-full max-w-md p-8'>
-            <Image src='/images/guardianes_logo.png' width={452} height={455} alt='guardianes logo'/>
+            <Image
+              src='/images/guardianes_logo.png'
+              width={452}
+              height={455}
+              alt='guardianes logo'
+            />
           </div>
           <Link href='/productos/'>
             <div className='pill mx-auto mt-4 cursor-pointer px-8 py-2 font-serif text-xl hover:bg-amber-400 active:scale-95'>

@@ -1,6 +1,7 @@
 import { BsList } from 'react-icons/bs'
 import { useState } from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 import styles from './Header.module.css'
 
 export default function Header() {
@@ -10,9 +11,13 @@ export default function Header() {
   return (
     <header className='relative bg-amber-500'>
       <div className='container mx-auto px-4'>
-        <div className='flex items-center justify-between gap-2 py-4 text-white'>
+        <div className='flex items-center justify-between gap-2 py-3 text-white'>
           <BsList className='text-4xl active:scale-95 lg:hidden' onClick={() => { setMenuOpen(!menuOpen) }}/>
-          <Link href='/'><div className='aspect-square h-14 rounded-md bg-amber-700 cursor-pointer'></div></Link>
+          <Link href='/'>
+            <div className='aspect-square relative h-16 cursor-pointer'>
+              <Image src='/images/territorio_monarca_icon.png' layout='fill'/>
+            </div>
+          </Link>
           <nav className={`${ menuOpen ? 'scale-y-100 opacity-100' : 'scale-y-0 opacity-0' } ${styles.menu}`}>
             <div><Link href='/'><a className={styles.menu__item}>Home</a></Link></div>
             <div className='group relative'><Link href='/mariposa_monarca/'><a className={styles.menu__item}>Mariposa Monarca</a></Link>

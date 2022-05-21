@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 export default function Product({ title, img, price, description, link }) {
   return (
-    <div className='h-full overflow-auto p-6 gap-8 grid grid-cols-1 lg:grid-cols-2 grid-rows-2 lg:grid-rows-1 lg:items-center grid-flow-row-dense'>
+    <div className='h-full overflow-auto p-6 pb-0 gap-8 grid grid-cols-1 lg:grid-cols-2 grid-rows-2 lg:grid-rows-1 lg:items-center grid-flow-row-dense'>
       <figure className='relative h-full w-full lg:col-start-2'>
         <Image src={img} layout='fill' objectFit='contain' alt='bodem' />
       </figure>
