@@ -1,18 +1,20 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import Header from '@/components/Header'
+import Founder from '@/components/Founder'
+import { founders } from '@/lib/founders'
 
 export default function Home() {
   return (
     <div>
       <Header />
       <section className='rounded-b-3xl bg-clay-300'>
-        <div className='container relative mx-auto px-4 flex justify-center'>
+        <div className='container relative mx-auto flex justify-center px-4'>
           <div className='relative -bottom-16 aspect-square w-64 rounded-full bg-amber-500 lg:w-72'></div>
         </div>
       </section>
       <section>
-        <div className='container mx-auto px-4 py-28 lg:py-36 text-center'>
+        <div className='container mx-auto px-4 py-28 text-center lg:py-36'>
           <h1 className='mb-8 text-5xl lg:text-6xl'>Territorio Monarca</h1>
           <p className='px-8 py-2'>
             Somos una Fundación que desde 2017 protege a la mariposa monarca al
@@ -29,13 +31,11 @@ export default function Home() {
       <section className='rounded-3xl bg-clay-300'>
         <div className='container relative mx-auto px-4 py-12'>
           <div className='absolute left-1/2 -top-16 mx-auto aspect-square w-52 -translate-x-1/2 transform rounded-full bg-clay-300 lg:w-64'></div>
-          <h1 className='text-center relative mx-auto px-8 py-1'>Creadores</h1>
+          <h1 className='relative mx-auto px-8 py-1 text-center'>Creadores</h1>
           <div className='relative mt-8 flex flex-wrap justify-center gap-8 py-4'>
-            <div className='aspect-square w-36 rounded-full bg-amber-500 sm:w-40 lg:w-48'></div>
-            <div className='aspect-square w-36 rounded-full bg-amber-500 sm:w-40 lg:w-48'></div>
-            <div className='aspect-square w-36 rounded-full bg-amber-500 sm:w-40 lg:w-48'></div>
-            <div className='aspect-square w-36 rounded-full bg-amber-500 sm:w-40 lg:w-48'></div>
-            <div className='aspect-square w-36 rounded-full bg-amber-500 sm:w-40 lg:w-48'></div>
+            {founders.map((founder) => (
+              <Founder key={founder.name} {...founder} />
+            ))}
           </div>
         </div>
       </section>
@@ -54,7 +54,7 @@ export default function Home() {
       </section>
       <section className='bg-clay-300'>
         <div className='container mx-auto px-4 py-12 lg:py-20'>
-          <h1 className='text-center mx-auto mb-8 px-8 py-1'>Aliados</h1>
+          <h1 className='mx-auto mb-8 px-8 py-1 text-center'>Aliados</h1>
           <div className='flex flex-wrap items-center justify-center gap-4'>
             <h4 className='pill bg-blue-400'>Hello Monarca</h4>
             <h4 className='pill bg-blue-400'>Hello Monarca</h4>

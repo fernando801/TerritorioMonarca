@@ -15,7 +15,7 @@ export default function Header() {
           <BsList className='text-4xl active:scale-95 lg:hidden' onClick={() => { setMenuOpen(!menuOpen) }}/>
           <Link href='/'>
             <div className='aspect-square relative h-16 cursor-pointer'>
-              <Image src='/images/territorio_monarca_icon.png' layout='fill'/>
+              <Image src='/images/territorio_monarca_icon.png' layout='fill' objectFit='contain'/>
             </div>
           </Link>
           <nav className={`${ menuOpen ? 'scale-y-100 opacity-100' : 'scale-y-0 opacity-0' } ${styles.menu}`}>

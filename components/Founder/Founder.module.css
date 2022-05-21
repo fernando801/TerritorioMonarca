@@ -1,0 +1,30 @@
+.founder_icon{
+  @apply
+    relative
+    overflow-hidden
+    aspect-square
+    w-full
+    cursor-pointer
+    rounded-full
+    bg-amber-500
+    transition-all
+    duration-100
+    hover:scale-105
+    max-w-[9rem]
+    sm:max-w-[12rem]
+    lg:max-w-[14rem]
+}
+
+.founder_description{
+  text-align: justify;
+
+  & p{
+    padding: 0.5rem 0;
+  }
+
+  & ul{
+    list-style: disc;
+    padding-left: 2rem;
+  }
+}
+
