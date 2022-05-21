@@ -6,7 +6,7 @@ export default function ComoAyudar() {
   return (
     <div>
       <Header />
-      <section className='rounded-b-3xl bg-zinc-200'>
+      <section className='rounded-b-3xl bg-clay-300'>
         <div className='container relative mx-auto pt-8 sm:pt-16 py-16 px-4'>
           <h1 className='mx-auto py-4 text-center sm:mb-12'>¿Cómo Ayudar?</h1>
           <h5 className='px-6 py-2'>Guardianes Monarca</h5>
@@ -50,10 +50,10 @@ export default function ComoAyudar() {
         </div>
       </section>
       <section>
-        <div className='relative mx-auto max-w-4xl p-12'>
-          <div className='relative aspect-square rounded-3xl bg-zinc-200 p-8 md:rounded-full md:p-[15%]'>
+        <div className='relative mx-auto max-w-4xl py-12 px-8'>
+          <div className='relative aspect-square rounded-3xl bg-clay-300 p-8 md:rounded-full md:p-[15%]'>
             <h2 className='py-6 text-center'>
-              Conviertete en Guardian Monarca
+              Conviértete en Guardian Monarca
             </h2>
             <p className='py-4 text-justify'>
               Para ser un Guardián Monarca se necesita más que simplemente la

@@ -16,7 +16,7 @@ export default function MariposaMonarca() {
         />
       </div>
       <section>
-        <div className='container relative mx-auto rounded-3xl bg-zinc-100 pt-8 sm:pt-16 py-16 px-4 lg:-top-40 lg:pb-0'>
+        <div className='container relative mx-auto rounded-3xl bg-silver-200 pt-8 sm:pt-16 py-16 px-4 lg:-top-40 lg:pb-0'>
           <h1 className='mb-6 sm:mb-12 p-2 lg:p-4'>Mariposa Monarca</h1>
           <div className='grid gap-4 lg:grid-cols-2'>
             <KeyFact title='Mariposa' img='/images/guardianes_logo_bw.png'>
@@ -62,7 +62,7 @@ export default function MariposaMonarca() {
           </div>
         </div>
       </section>
-      <section className='relative rounded-t-3xl bg-zinc-200'>
+      <section className='relative rounded-t-3xl bg-clay-300'>
         <div className='container mx-auto py-12 px-6'>
           <div className='grid items-center gap-8 lg:grid-cols-[1fr_2fr]'>
             <h2 className='py-4 lg:col-start-2'>Características</h2>
