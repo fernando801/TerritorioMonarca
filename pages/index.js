@@ -3,8 +3,19 @@ import Image from 'next/image'
 import Header from '@/components/Header'
 import Founder from '@/components/Founder'
 import { founders } from '@/lib/founders'
+import { getPartners } from '@/lib/api'
 
-export default function Home() {
+export async function getStaticProps() {
+  const partners = (await getPartners()) || []
+
+  return {
+    props: {
+      partners,
+    },
+  }
+}
+
+export default function Home({ partners }) {
   return (
     <div>
       <Header />
@@ -55,13 +66,18 @@ export default function Home() {
       <section className='bg-clay-300'>
         <div className='container mx-auto px-4 py-12 lg:py-20'>
           <h1 className='mx-auto mb-8 px-8 py-1 text-center'>Aliados</h1>
-          <div className='flex flex-wrap items-center justify-center gap-4'>
-            <h4 className='pill bg-blue-400'>Hello Monarca</h4>
-            <h4 className='pill bg-blue-400'>Hello Monarca</h4>
-            <h4 className='pill bg-blue-400'>Hello Monarca</h4>
-            <h4 className='pill bg-blue-400'>Hello Monarca</h4>
-            <h5 className='pill bg-blue-400'>Hello Monarca</h5>
-            <h6 className='pill bg-blue-400'>Hello Monarca</h6>
+          <div className='flex flex-wrap items-center justify-center gap-x-12 gap-y-6'>
+            {partners.map((partner) => (
+              <a key={`${partner.id}`} className='relative aspect-video h-32 block' href={partner.website || '#'} target='_blank' >
+                <Image
+                  src={partner.image.url}
+                  alt={partner.name}
+                  layout='fill'
+                  objectFit='contain'
+                  priority={true}
+                />
+              </a>
+            ))}
           </div>
         </div>
       </section>

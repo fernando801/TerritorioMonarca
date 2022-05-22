@@ -13,38 +13,93 @@ export default function MariposaMonarca() {
           layout='fill'
           objectFit='cover'
           alt='mariposa monarca'
+          priority={true}
         />
       </div>
       <section>
         <div className='container relative mx-auto rounded-3xl bg-silver-200 py-16 px-4 pt-8 sm:pt-16 lg:-top-40 lg:pb-0'>
           <h1 className='mb-6 p-2 sm:mb-12 lg:p-4'>Mariposa Monarca</h1>
           <div className='grid gap-4 lg:grid-cols-2'>
-            <KeyFact title='Mariposa' img='/images/guardianes_logo_bw.png'>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Voluptatem nesciunt quibusdam sint. Voluptate facilis adipisci
-              magni. Repudiandae quibusdam quam earum, amet voluptatibus tempore
-              adipisci nesciunt molestiae expedita unde placeat culpa!
+            <KeyFact title='Importancia' img='/images/guardianes_logo_bw.png'>
+              <ol className='list-decimal pl-4'>
+                <li className='py-1'>
+                  La mariposa monarca es un bioindicador demasiado importante,
+                  puesto que reconoce cuando la tierra y las plantas contienen
+                  pesticidas o están muriendo, por lo cual no hacen sus paradas,
+                  ya que la tierra está enferma y muerta.
+                </li>
+                <li className='py-1'>
+                  Se alimentan del polen y llegan a fertilizar 4500 km de
+                  plantas, lo cual provoca que muchos de nuestros alimentos sean
+                  el producto de la fertilización hecha por las mariposas.
+                </li>
+                <li className='py-1'>
+                  Podría incluso decirse que el equilibrio de la naturaleza en
+                  México se basa en la travesía que llevan las mariposas.
+                </li>
+              </ol>
             </KeyFact>
-            <KeyFact title='Territorio' img='/images/guardianes_logo_bw.png'>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Voluptatem nesciunt quibusdam sint. Voluptate facilis adipisci
-              magni. Repudiandae quibusdam quam earum, amet voluptatibus tempore
-              adipisci nesciunt molestiae expedita unde placeat culpa!
+            <KeyFact title='Migración' img='/images/guardianes_logo_bw.png'>
+              <p className='py-1'>
+                La mariposa que sale de EUA y Canadá no es la misma que llega a
+                México. En realidad quien llega es la 5ta generación, la cual
+                deja huevos y mueren. Esta 5ta es conocida como matusalén, y es
+                de un tamaño más grande.
+              </p>
+              <p className='py-1'>
+                Esta generación de mariposas llega a México, descansa en los
+                santuarios y posteriormente hace el viaje de regreso . En
+                comparación de la otras mariposas que solo viven 28 días, las
+                matusalén llegar a vivir de 4 a 6 meses.
+              </p>
+              <p className='py-1'>
+                Este fenómeno migratorio solo está en EUA, Canadá y México; por
+                lo que no está en extinción la especie, está en extinción el
+                fenómeno.
+              </p>
             </KeyFact>
-            <KeyFact title='Números' img='/images/guardianes_logo_bw.png'>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Voluptatem nesciunt quibusdam sint. Voluptate facilis adipisci
-              magni. Repudiandae quibusdam quam earum, amet voluptatibus tempore
-              adipisci nesciunt molestiae expedita unde placeat culpa!
+            <KeyFact title='Problema' img='/images/guardianes_logo_bw.png'>
+              <p className='py-1'>
+                En 2014 se manda una alerta internacional, ya que comienza a
+                disminuir la población de mariposas monarcas de 200 millones a
+                tan solo 6 millones, por lo cual el fenómeno que solo sucede en
+                México, Estados Unidos y Canadá, se encontraba en peligro.
+              </p>
+              <p className='py-1'>
+                Debido a esta situación se decide contratar al ingeniero Fluvio
+                quien después de realizar una travesía por el recorrido de la
+                mariposa, llega a la conclusión de que ya no existen lugares
+                donde la mariposa pueda descansar, reproducirse y dejar sus
+                huevecillos, ya que todos estos lugares han sido contaminados
+                por fábricas industriales, contaminación y la población en
+                general, y la mariposa monarca no se posará en lugares cuya
+                tierra se encuentre muerta.
+              </p>
             </KeyFact>
-            <KeyFact title='Vegetación' img='/images/guardianes_logo_bw.png'>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Voluptatem nesciunt quibusdam sint. Voluptate facilis adipisci
-              magni. Repudiandae quibusdam quam earum, amet voluptatibus tempore
-              adipisci nesciunt molestiae expedita unde placeat culpa!
+            <KeyFact
+              title='Generación Matusalén'
+              img='/images/guardianes_logo_bw.png'
+            >
+              <p className='py-1'>
+                Normalmente, las mariposas adultas reproductivas viven de cuatro
+                a cinco semanas, no obstante una de las maravillas de la
+                mariposa Monarca es la producción de la llamada “generación
+                Matusalén”.
+              </p>
+              <p className='py-1'>
+                Cuando el otoño se acerca en los sitios donde provienen las
+                mariposas migratorias, nace esta generación especial, las cuales
+                no son iguales a sus ancestros, ya que a diferencia de sus
+                padres, abuelos, bisabuelos e incluso tatarabuelos, quienes
+                tuvieron una vida efímera de unas semanas e incluso hasta un
+                mes, estas mariposas migratorias vivirán hasta siete u ocho
+                meses. Esta es la generación que efectúa la increíble proeza de
+                volar desde Canadá y Estados Unidos, hasta el centro de México y
+                de regreso.
+              </p>
             </KeyFact>
           </div>
-          <div className='bg-whiete mx-auto mt-16 w-5/6 rounded-3xl bg-white p-8 text-center shadow'>
+          <div className='bg-whiete sm:mx-auto mt-16 mx-4 sm:w-5/6 rounded-3xl bg-white p-8 text-justify sm:text-center shadow'>
             <h2 className='mb-8 text-center'> Ciclo de Vida</h2>
             <p>
               Ciclo de vida (oruga, crisálida, mariposa, matusalén) La mariposa

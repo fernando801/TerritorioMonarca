@@ -16,7 +16,7 @@ export default function Donar() {
         </div>
       </section>
       <section>
-        <div className='container mx-auto text-center font-bold text-4xl text-mustard-500'>
+        <div className='container mx-auto text-center font-bold text-3xl sm:text-4xl text-mustard-500 py-12'>
           <p>CUENTA: XXXX XXXX XXXX XXXX</p>
           <p>BANCO: XXXXXXXXXXXXX</p>
           <p>OTROS DATOS: XXXXXXXXXXXXXX</p>

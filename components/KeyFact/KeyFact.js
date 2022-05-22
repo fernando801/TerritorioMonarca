@@ -10,7 +10,7 @@ export default function KeyFact({ title, children, img }) {
       </div>
       <div>
         <h3 className='p-2'>{title}</h3>
-        <p className='p-2'>{children}</p>
+        <div className='p-2 text-justify'>{children}</div>
       </div>
     </div>
   )
