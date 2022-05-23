@@ -4,8 +4,8 @@ import Image from 'next/image'
 export default function PostCard({ post }) {
   return (
     <Link href={`/blog/posts/${post.slug}`}>
-      <div className='cursor-pointer w-80 p-8 text-center bg-amber-400 shrink-0 active:bg-amber-300'>
-        <div className='relative mx-auto overflow-hidden aspect-square w-52 rounded-full'>
+      <div className='cursor-pointer w-72 p-8 text-center bg-amber-400 shrink-0 active:bg-amber-300'>
+        <div className='relative mx-auto overflow-hidden aspect-square w-full rounded-full'>
           <Image
             src={post.coverImage.url}
             alt={post.title}
