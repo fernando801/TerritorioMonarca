@@ -104,6 +104,26 @@ a {
   }
 }
 
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
 @layer components {
   .pill {
     @apply w-fit rounded-full bg-amber-500 py-1 px-4 text-center text-white;

@@ -29,7 +29,7 @@ export default function CyclePhase({ name, img, description }) {
               <div className='relative mx-auto aspect-square w-40 md:w-52 lg:w-60 shrink-0 overflow-hidden rounded-full bg-amber-400'>
                 <Image src={img} layout='fill' objectFit='cover' alt={name} />
               </div>
-              <div className='space-y-4 pt-6 md:p-8'>
+              <div className='space-y-4 mt-6 md:px-8 md:mt-8'>
                 <h2 className='text-center'>{name}</h2>
                 <div className={styles.founder_description}>{description}</div>
               </div>
