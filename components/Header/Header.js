@@ -19,22 +19,22 @@ export default function Header() {
             </div>
           </Link>
           <nav className={`${ menuOpen ? 'scale-y-100 opacity-100' : 'scale-y-0 opacity-0' } ${styles.menu}`}>
-            <div><Link href='/'><a className={styles.menu__item}>Home</a></Link></div>
-            <div className='group relative'><Link href='/mariposa_monarca/'><a className={styles.menu__item}>Mariposa Monarca</a></Link>
+            <div><Link href='/'><div className={styles.menu__item}>Home</div></Link></div>
+            <div className='group relative'><Link href='/mariposa_monarca/'><div className={styles.menu__item}>Mariposa Monarca</div></Link>
               <div className={`${styles.dropdown} lg:group-hover:scale-y-100 lg:group-hover:opacity-100`}>
-                <div><Link href='/mariposa_monarca/ciclo/'><a className={styles.menu__subitem}>Ciclo de vida</a></Link></div>
+                <div><Link href='/mariposa_monarca/ciclo/'><div className={styles.menu__subitem}>Ciclo de vida</div></Link></div>
               </div>
             </div>
-            <div className='group relative'><Link href='/como_ayudar/'><a className={styles.menu__item}>¿Cómo ayudar?</a></Link>
+            <div className='group relative'><Link href='/como_ayudar/'><div className={styles.menu__item}>¿Cómo ayudar?</div></Link>
               <div className={`${styles.dropdown} lg:group-hover:scale-y-100 lg:group-hover:opacity-100`}>
-                <div><Link href='/como_ayudar/guardianes/'><a className={styles.menu__subitem}>Guardianes Monarca</a></Link></div>
-                <div><Link href='/como_ayudar/donar/'><a className={styles.menu__subitem}>Donar</a></Link></div>
+                <div><Link href='/como_ayudar/guardianes/'><div className={styles.menu__subitem}>Guardianes Monarca</div></Link></div>
+                <div><Link href='/como_ayudar/donar/'><div className={styles.menu__subitem}>Donar</div></Link></div>
               </div>
             </div>
-            <div><Link href='/productos/'><a className={styles.menu__item}>Productos</a></Link></div>
-            <div><a className={styles.menu__item}>Jardínes</a></div>
-            <div><a className={styles.menu__item}>Contacto</a></div>
-            <div><a className={styles.menu__item}>Blog</a></div>
+            <div><Link href='/productos/'><div className={styles.menu__item}>Productos</div></Link></div>
+            <div><div className={styles.menu__item}>Jardínes</div></div>
+            <div><div className={styles.menu__item}>Contacto</div></div>
+            <div><Link href='/blog/'><div className={styles.menu__item}>Blog</div></Link></div>
           </nav>
         </div>
       </div>
