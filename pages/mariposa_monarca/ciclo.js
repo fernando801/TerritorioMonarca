@@ -60,7 +60,7 @@ export default function ComoAyudar() {
       </section>
       <section>
         <div className='container mx-auto px-8 py-16'>
-          <h2 className='text-center'>Etapas del cilco</h2>
+          <h2 className='text-center'>Etapas del ciclo</h2>
           <div className='mt-12 grid justify-items-center gap-8 sm:grid-cols-2 lg:gap-y-16 xl:grid-cols-4'>
             {phases.map( phase => (
               <CyclePhase key={phase.title} {...phase} />
