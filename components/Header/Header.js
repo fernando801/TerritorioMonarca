@@ -20,7 +20,7 @@ export default function Header() {
           <Link href='/'>
             <div className='relative aspect-square h-16 cursor-pointer'>
               <Image
-                src='/images/territorio_monarca_icon.png'
+                src='/images/territorio_monarca_logo.png'
                 layout='fill'
                 objectFit='contain'
               />
@@ -33,7 +33,12 @@ export default function Header() {
           >
             <div>
               <Link href='/'>
-                <div className={styles.menu__item}>Home</div>
+                <div className={styles.menu__item}>Inicio</div>
+              </Link>
+            </div>
+            <div>
+              <Link href='/nosotros/'>
+                <div className={styles.menu__item}>Nosotros</div>
               </Link>
             </div>
             <div className='group relative'>
@@ -43,11 +48,9 @@ export default function Header() {
               <div
                 className={`${styles.dropdown} lg:group-hover:scale-y-100 lg:group-hover:opacity-100`}
               >
-                <div>
-                  <Link href='/mariposa_monarca/ciclo/'>
-                    <div className={styles.menu__subitem}>Ciclo de vida</div>
-                  </Link>
-                </div>
+                <Link href='/mariposa_monarca/ciclo/'>
+                  <div className={styles.menu__subitem}>Ciclo de vida</div>
+                </Link>
               </div>
             </div>
             <div className='group relative'>
@@ -57,24 +60,16 @@ export default function Header() {
               <div
                 className={`${styles.dropdown} lg:group-hover:scale-y-100 lg:group-hover:opacity-100`}
               >
-                <div>
-                  <Link href='/como_ayudar/guardianes/'>
-                    <div className={styles.menu__subitem}>
-                      Guardianes Monarca
-                    </div>
-                  </Link>
-                </div>
-                <div>
-                  <Link href='/como_ayudar/donar/'>
-                    <div className={styles.menu__subitem}>Donar</div>
-                  </Link>
-                </div>
+                <Link href='/como_ayudar/guardianes/'>
+                  <div className={styles.menu__subitem}>Guardianes Monarca</div>
+                </Link>
+                <Link href='/como_ayudar/donar/'>
+                  <div className={styles.menu__subitem}>Donar</div>
+                </Link>
+                <Link href='/como_ayudar/productos/'>
+                  <div className={styles.menu__subitem}>Productos</div>
+                </Link>
               </div>
-            </div>
-            <div>
-              <Link href='/productos/'>
-                <div className={styles.menu__item}>Productos</div>
-              </Link>
             </div>
             <div>
               <div className={styles.menu__item}>Jardines</div>

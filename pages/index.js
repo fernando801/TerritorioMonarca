@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import Link from 'next/link'
 import Header from '@/components/Header'
 import Founder from '@/components/Founder'
 import { founders } from '@/lib/founders'
@@ -52,14 +53,28 @@ export default function Home({ partners }) {
       </section>
       <section>
         <div className='container mx-auto px-6 py-12 lg:py-20'>
-          <h1 className='mx-auto px-8 text-center'> Nuestra Historia</h1>
-          <div className='bg-whiete mx-auto mt-8 rounded-3xl bg-white p-8 text-center'>
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos,
-              officiis. Nam dolore consequatur fugit. Modi, nostrum cum. Labore
-              modi, amet fugiat laboriosam at, vel aliquid quis, earum cumque
-              explicabo natus.
+          <div className='bg-whiete mx-auto mt-8 rounded-3xl bg-white p-8 text-justify'>
+            <h1 className='mx-auto px-8 text-center py-4 sm:py-8'> Nuestra Historia</h1>
+            <p className='p-2'>
+              En el año 2007, el Instituto Correo Real se encargó de contar el
+              número de mariposas que había, así como también las hectáreas que
+              dichas mariposas ocupaban, reportando así que existía la cantidad
+              de 200 millones de mariposas y que utilizaban alrededor de 19.5
+              hectáreas.
             </p>
+            <p className='p-2'>
+              En 2014 se realizó el mismo conteo y posteriormente se reportó que
+              ese año solo habían llegado 6 millones de mariposas y que ocupaban
+              menos de media hectárea. Al hacer público dicho informe, se
+              despliegan las alertas internacionales y se contrata al ingeniero
+              Fluvio, quien se encarga de recorrer de manera completa la ruta de
+              la mariposa monarca.
+            </p>
+            <Link href='/nosotros/'>
+              <div className='pill mx-auto mt-12 cursor-pointer px-8 py-2 font-serif text-xl hover:bg-amber-400 active:scale-95'>
+                Leer más
+              </div>
+            </Link>
           </div>
         </div>
       </section>
@@ -68,7 +83,12 @@ export default function Home({ partners }) {
           <h1 className='mx-auto mb-8 px-8 py-1 text-center'>Aliados</h1>
           <div className='flex flex-wrap items-center justify-center gap-x-12 gap-y-6'>
             {partners.map((partner) => (
-              <a key={`${partner.id}`} className='relative aspect-video h-32 block' href={partner.website || '#'} target='_blank' >
+              <a
+                key={`${partner.id}`}
+                className='relative block aspect-video h-32'
+                href={partner.website || '#'}
+                target='_blank'
+              >
                 <Image
                   src={partner.image.url}
                   alt={partner.name}
