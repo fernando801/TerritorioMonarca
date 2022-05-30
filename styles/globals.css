@@ -142,27 +142,27 @@ a {
   }
 
   h1 {
-    @apply leading-normal text-4xl sm:text-5xl;
+    @apply leading-normal text-4xl sm:text-5xl sm:leading-normal;
   }
 
   h2 {
     font-size: 1.875rem;
-    @apply leading-normal text-3xl sm:text-4xl;
+    @apply leading-normal text-3xl sm:text-4xl sm:leading-normal;
   }
 
   h3 {
-    @apply leading-normal text-2xl sm:text-3xl;
+    @apply leading-normal text-2xl sm:text-3xl sm:leading-normal;
   }
 
   h4 {
-    @apply leading-normal text-xl sm:text-2xl;
+    @apply leading-normal text-xl sm:text-2xl sm:leading-normal;
   }
 
   h5 {
-    @apply leading-normal text-lg sm:text-xl;
+    @apply leading-normal text-lg sm:text-xl sm:leading-normal;
   }
 
   h6 {
-    @apply leading-normal text-base sm:text-lg;
+    @apply leading-normal text-base sm:text-lg sm:leading-normal;
   }
 }

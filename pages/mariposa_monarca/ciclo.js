@@ -5,7 +5,7 @@ import CyclePhase from '@/components/CyclePhase'
 
 const phases = [
   {
-    title: 'Fase de Huevo',
+    title: 'Fase de huevo',
     thumbnail: '/images/guardianes_logo_bw.png',
     img: '/images/mariposa_monarca.jpg',
     description: [
@@ -14,7 +14,7 @@ const phases = [
     ],
   },
   {
-    title: 'Fase de Larva',
+    title: 'Fase de larva',
     thumbnail: '/images/guardianes_logo_bw.png',
     img: '/images/mariposa_monarca.jpg',
     description: [
@@ -24,7 +24,7 @@ const phases = [
     ],
   },
   {
-    title: 'Fase de Crisalida',
+    title: 'Fase de crisalida',
     thumbnail: '/images/guardianes_logo_bw.png',
     img: '/images/mariposa_monarca.jpg',
     description: [
@@ -32,7 +32,7 @@ const phases = [
     ],
   },
   {
-    title: 'Fase de Adulto',
+    title: 'Fase de adulto',
     thumbnail: '/images/guardianes_logo_bw.png',
     img: '/images/mariposa_monarca.jpg',
     description: [

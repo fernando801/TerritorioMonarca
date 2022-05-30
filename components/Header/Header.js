@@ -69,10 +69,15 @@ export default function Header() {
                 <Link href='/como_ayudar/productos/'>
                   <div className={styles.menu__subitem}>Productos</div>
                 </Link>
+                <Link href='/como_ayudar/paquetes/'>
+                  <div className={styles.menu__subitem}>Paquetes Monarca</div>
+                </Link>
               </div>
             </div>
             <div>
-              <div className={styles.menu__item}>Jardines</div>
+              <Link href='/jardines/'>
+                <div className={styles.menu__item}>Jardines</div>
+              </Link>
             </div>
             <div>
               <div className={styles.menu__item}>Contacto</div>
