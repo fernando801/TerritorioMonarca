@@ -4,6 +4,12 @@ import Image from 'next/image'
 import Header from '@/components/Header'
 import PaqueteMonarca from '@/components/PaqueteMonarca'
 
+const paquetesPublico = [
+]
+
+const paquetesAliados = [
+]
+
 export default function Jardines () {
   return(
     <>
@@ -17,14 +23,14 @@ export default function Jardines () {
         <article className='mx-auto container p-4'>
           <h3 className='p-8'>Público en General</h3>
           <div className='rounded-3xl bg-clay-300 p-8 overflow-auto'>
-            <PaqueteMonarca title={'El Bicho'}/>
+            <PaqueteMonarca title={'Paquete 1'}/>
           </div>
         </article>
       </section>
       <article className='mx-auto container p-4'>
           <h3 className='p-8'>Aliados y Empresas</h3>
           <div className='rounded-3xl bg-clay-300 p-8 overflow-auto'>
-            <PaqueteMonarca title={'El Bicho'}/>
+            <PaqueteMonarca title={'Paquete 2'}/>
           </div>
         </article>
     </>
