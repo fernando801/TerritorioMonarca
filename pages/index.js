@@ -83,11 +83,9 @@ export default function Home({ partners }) {
           <h1 className='mx-auto mb-8 px-8 py-1 text-center'>Aliados</h1>
           <div className='flex flex-wrap items-center justify-center gap-x-12 gap-y-6'>
             {partners.map((partner) => (
-              <a
+              <div
                 key={`${partner.id}`}
-                className='relative block aspect-video h-32'
-                href={partner.website || '#'}
-                target='_blank'
+                className='relative aspect-video h-32'
               >
                 <Image
                   src={partner.image.url}
@@ -96,7 +94,7 @@ export default function Home({ partners }) {
                   objectFit='contain'
                   priority={true}
                 />
-              </a>
+              </div>
             ))}
           </div>
         </div>
