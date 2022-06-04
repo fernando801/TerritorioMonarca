@@ -13,7 +13,7 @@ export default function CyclePhase({ title, img, thumbnail, description }) {
         onClick={() => setModal(true)}
       >
         <h2 className='mb-8 text-center'>{title}</h2>
-        <div className='aspect-square rounded-3xl bg-amber-500 p-6'>
+        <div className='aspect-square rounded-3xl bg-[#eb9b01] p-6'>
           <div className='relative h-full w-full'>
             {img && <Image src={thumbnail} layout='fill' objectFit='contain' />}
           </div>

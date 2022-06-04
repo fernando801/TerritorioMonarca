@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
 import Header from '@/components/Header'
+import Footer from '@/components/Footer'
 import Founder from '@/components/Founder'
 import { founders } from '@/lib/founders'
 import { getPartners } from '@/lib/api'
@@ -18,11 +19,17 @@ export async function getStaticProps() {
 
 export default function Home({ partners }) {
   return (
-    <div>
+    <>
       <Header />
       <section className='rounded-b-3xl bg-clay-300'>
         <div className='container relative mx-auto flex justify-center px-4'>
-          <div className='relative -bottom-16 aspect-square w-64 rounded-full bg-amber-500 lg:w-72'></div>
+          <div className='relative -bottom-16 aspect-square w-64 rounded-full lg:w-72'>
+            <Image 
+              src='/images/territorio_monarca_logo.png'
+              layout='fill'
+              objectFit='contain'
+            />
+          </div>
         </div>
       </section>
       <section>
@@ -99,6 +106,7 @@ export default function Home({ partners }) {
           </div>
         </div>
       </section>
-    </div>
+      <Footer />
+    </>
   )
 }

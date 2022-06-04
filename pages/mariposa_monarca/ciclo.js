@@ -6,7 +6,7 @@ import CyclePhase from '@/components/CyclePhase'
 const phases = [
   {
     title: 'Fase de huevo',
-    thumbnail: '/images/guardianes_logo_bw.png',
+    thumbnail: '/images/phases/fase_huevo.png',
     img: '/images/mariposa_monarca.jpg',
     description: [
       'La hembra se encarga de depositar más de 500 huevecillos en el revés de las hojas de las plantas del género Asclepias, las cuales fueron llamadas así en honor al hijo de Apolo,  Asclepius pues tiene propiedades tanto tóxicas como medicinales y son hierbas perennes, que van desde  60 centímetros a metro y medio de altura.',
@@ -15,7 +15,7 @@ const phases = [
   },
   {
     title: 'Fase de larva',
-    thumbnail: '/images/guardianes_logo_bw.png',
+    thumbnail: '/images/phases/fase_larva.png',
     img: '/images/mariposa_monarca.jpg',
     description: [
       'De los huevecillos de color blanco nacen las larvas u orugas de color blanco con unas finas estrías de color negro y amarillo anaranjado. Su cuerpo cilíndrico está conformado por trece segmentos. En su cabeza posee un par de antenas las cuales se encargan de guiarla, además de que posee seis pares de ojos; sin embargo, su visión es demasiado pobre.',
@@ -25,15 +25,15 @@ const phases = [
   },
   {
     title: 'Fase de crisalida',
-    thumbnail: '/images/guardianes_logo_bw.png',
-    img: '/images/mariposa_monarca.jpg',
+    thumbnail: '/images/phases/fase_crisalida.png',
+    img: '/images/phases/etapa_crisalida.png',
     description: [
       'En esta fase la oruga deja de comer y abandona la planta donde nació para poder buscar un lugar apropiado para convertirse en crisálida. Para esto, limpia sus intestinos y teje una pequeña almohadilla bajo una rama de la cual se cuelga de la parte posterior del abdomen formando así una “J” con su cuerpo. Aquí cambia una última vez de piel y de su boca saca un hilo de seda con la cual forma la cubierta que se encargará de protegerla. Aproximadamente en una hora se convierte en una crisálida que gradualmente se endurece volviéndose de color azul verdoso con puntos dorados. Después de ocho a diez días, la crisálida se vuelve traslúcida pudiendo así observar las alas de la mariposa.'
     ],
   },
   {
     title: 'Fase de adulto',
-    thumbnail: '/images/guardianes_logo_bw.png',
+    thumbnail: '/images/phases/fase_adulto.png',
     img: '/images/mariposa_monarca.jpg',
     description: [
       'Una vez que la mariposa se ha formado dentro del capullo, la envoltura se rasga y comienza a salir el adulto. Al momento de salir del capullo, primero comienza liberando las patas y antenas. La mariposa se cuelga con sus alas hacia abajo, y empieza a bombear fluidos a sus alas para que estas se extiendan y se sequen, para que así cuando estas alcancen su firmeza y tamaño normal, pueda realizar su vuelo e incluso reproducirse.'
