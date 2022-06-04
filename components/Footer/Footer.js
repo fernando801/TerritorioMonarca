@@ -12,8 +12,8 @@ export default function Footer() {
               <div className='font-bold cursor-pointer'>Nosotros</div>
             </Link>
             <ul className='hidden flex-col gap-2 lg:flex'>
-              <li>- Misión y Visión</li>
-              <li>- Nuestra Historia</li>
+              <Link href='/nosotros#nosotros'><li className='cursor-pointer'>- Misión y Visión</li></Link>
+              <Link href='/nosotros#nuestra-histoia'><li className='cursor-pointer'>- Nuestra Historia</li></Link>
             </ul>
           </div>
           <div className='flex flex-col gap-2'>
@@ -21,8 +21,8 @@ export default function Footer() {
               <div className='font-bold cursor-pointer'>Mariposa Monarca</div>
             </Link>
             <ul className='hidden lg:flex flex-col gap-2'>
-              <li>- Ciclo de vida</li>
-              <li>- Características</li>
+              <Link href='/mariposa_monarca/ciclo/'><li className='cursor-pointer'>- Ciclo de vida</li></Link>
+              <Link href='/mariposa_monarca#caracteristicas'><li className='cursor-pointer'>- Características</li></Link>
             </ul>
           </div>
           <div className='flex flex-col gap-2'>
@@ -30,10 +30,10 @@ export default function Footer() {
               <div className='font-bold cursor-pointer'>¿Cómo Ayudar?</div>
             </Link>
             <ul className='hidden lg:flex flex-col gap-2'>
-              <li>- Guardianes Monarca</li>
-              <li>- Donar</li>
-              <li>- Productos</li>
-              <li>- Paqutes Monarca</li>
+              <Link href='/como_ayudar/guardianes/'><li className='cursor-pointer'>- Guardianes Monarca</li></Link>
+              <Link href='/como_ayudar/donar/'><li className='cursor-pointer'>- Donar</li></Link>
+              <Link href='/como_ayudar/productos/'><li className='cursor-pointer'>- Productos</li></Link>
+              <Link href='/como_ayudar/paquetes/'><li className='cursor-pointer'>- Paqutes Monarca</li></Link>
             </ul>
           </div>
           <div className='flex flex-col gap-2'>

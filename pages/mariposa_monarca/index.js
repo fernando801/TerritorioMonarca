@@ -118,7 +118,7 @@ export default function MariposaMonarca() {
           </div>
         </div>
       </section>
-      <section className='relative rounded-t-3xl bg-clay-300'>
+      <section className='relative rounded-t-3xl bg-clay-300' id='caracteristicas'>
         <div className='container mx-auto py-12 px-6'>
           <div className='grid items-center gap-8 lg:grid-cols-[1fr_2fr]'>
             <h2 className='py-4 lg:col-start-2'>Características</h2>
