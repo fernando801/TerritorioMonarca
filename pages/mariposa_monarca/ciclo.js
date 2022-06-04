@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import Header from '@/components/Header'
+import Footer from '@/components/Footer'
 import CyclePhase from '@/components/CyclePhase'
 
 const phases = [
@@ -68,6 +69,7 @@ export default function ComoAyudar() {
           </div>
         </div>
       </section>
+      <Footer />
     </div>
   )
 }

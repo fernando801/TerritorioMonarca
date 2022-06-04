@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import Header from '@/components/Header'
+import Footer from '@/components/Footer'
 import KeyFact from '@/components/KeyFact'
 
 export default function MariposaMonarca() {
@@ -174,6 +175,7 @@ export default function MariposaMonarca() {
           </div>
         </div>
       </section>
+      <Footer />
     </>
   )
 }

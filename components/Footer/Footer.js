@@ -6,7 +6,7 @@ export default function Footer() {
   return (
     <footer className='overflow-x-hidden bg-amber-500 text-white'>
       <div className='container mx-auto'>
-        <div className='flex flex-wrap justify-between gap-4 p-8 lg:flex-row'>
+        <div className='flex flex-wrap justify-between gap-4 p-8 lg:py-12 lg:flex-row'>
           <div className='flex flex-col gap-2'>
             <Link href='/nosotros/'>
               <div className='font-bold cursor-pointer'>Nosotros</div>

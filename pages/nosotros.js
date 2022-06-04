@@ -1,14 +1,15 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import Header from '@/components/Header'
+import Footer from '@/components/Footer'
 
 export default function ComoAyudar() {
   return (
     <div>
       <Header />
       <section className='rounded-b-3xl bg-clay-300'>
-        <div className='container relative mx-auto py-16 px-4 pt-8 sm:pt-16'>
-          <h1 className='mx-auto py-4 text-center sm:mb-12'>Nosotros</h1>
+        <div className='container relative mx-auto py-8 px-4 sm:py-16'>
+          <h1 className='mx-auto py-4 text-center '>Nosotros</h1>
         </div>
       </section>
       <section>
@@ -151,6 +152,7 @@ export default function ComoAyudar() {
           </div>
         </div>
       </section>
+      <Footer />
     </div>
   )
 }
