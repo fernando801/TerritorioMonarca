@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Link from 'next/link'
 import Image from 'next/image'
 import Header from '@/components/Header'
+import Footer from '@/components/Footer'
 import Slider from '@/components/Slider'
 import PostCard from '@/components/PostCard'
 import { getPosts, getRecentPosts } from '@/lib/api'
@@ -46,6 +47,7 @@ export default function Blog({ posts, recentPosts }) {
           ))}
         </div>
       </section>
+      <Footer />
     </>
   )
 }

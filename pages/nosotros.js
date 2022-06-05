@@ -8,12 +8,12 @@ export default function ComoAyudar() {
     <div>
       <Header />
       <section className='rounded-b-3xl bg-clay-300' id='nosotros'>
-        <div className='container relative mx-auto py-8 px-4 sm:py-16'>
+        <div className='container relative mx-auto py-8 px-4 sm:py-12'>
           <h1 className='mx-auto py-4 text-center '>Nosotros</h1>
         </div>
       </section>
       <section id='mision-vision'>
-        <div className='container mx-auto px-4 py-20'>
+        <div className='container mx-auto px-4 py-16'>
           <div className='mx-auto grid grid-cols-1 lg:grid-cols-2 gap-y-4 rounded-3xl bg-white p-8 xl:max-w-6xl'>
             <div className='p-8'>
               <div className='relative h-72 lg:h-full'>
@@ -56,7 +56,7 @@ export default function ComoAyudar() {
         </div>
       </section>
       <section id='nuestra-historia'>
-        <div className='container mx-auto px-6 py-12 lg:py-20'>
+        <div className='container mx-auto px-6 py-12 lg:py-16'>
           <h1 className='mx-auto px-8 text-center'> Nuestra Historia</h1>
           <div className='mx-auto mt-8 rounded-3xl bg-white p-8 text-justify sm:mt-16 xl:max-w-6xl'>
             <p className='p-2'>

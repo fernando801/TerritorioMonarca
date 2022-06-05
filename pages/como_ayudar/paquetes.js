@@ -9,7 +9,7 @@ const paquetesPublico = []
 
 const paquetesAliados = []
 
-export default function Jardines() {
+export default function Paquetes() {
   return (
     <>
       <Header />
