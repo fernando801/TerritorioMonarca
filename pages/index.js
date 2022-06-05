@@ -22,8 +22,8 @@ export default function Home({ partners }) {
     <>
       <Header />
       <section className='rounded-b-3xl bg-clay-300'>
-        <div className='container relative mx-auto flex justify-center px-4'>
-          <div className='relative -bottom-16 aspect-square w-64 rounded-full lg:w-72'>
+        <div className='container relative mx-auto flex justify-center px-4 py-4'>
+          <div className='relative  aspect-square w-72 rounded-full lg:w-96'>
             <Image 
               src='/images/territorio_monarca_logo.png'
               layout='fill'
@@ -33,7 +33,7 @@ export default function Home({ partners }) {
         </div>
       </section>
       <section>
-        <div className='container mx-auto px-4 py-28 text-center lg:py-36'>
+        <div className='container mx-auto px-4 py-28 pt-12 text-center lg:py-36 lg:pt-20'>
           <h1 className='mb-8 text-5xl lg:text-6xl'>Territorio Monarca</h1>
           <p className='px-8 py-2'>
             Somos una Fundación que desde 2017 protege a la mariposa monarca al
