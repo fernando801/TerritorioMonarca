@@ -3,7 +3,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Header from '@/components/Header'
 import RelatedPost from '@/components/RelatedPost'
-import { getPostSlugs, getPostData, getPosts } from '@/lib/api'
+import { getPostSlugs, getPostData, getRelatedPosts } from '@/lib/api'
 
 export async function getStaticPaths() {
   const paths = await getPostSlugs()
@@ -16,7 +16,7 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({ params }) {
   const post = await getPostData(params.slug)
-  const relatedPosts = (await getPosts()) || []
+  const relatedPosts = (await getRelatedPosts(params.slug)) || []
 
   return {
     props: {
