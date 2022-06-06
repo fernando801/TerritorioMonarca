@@ -4,7 +4,7 @@ export default function ContactForm() {
   return (
     <form
       className='mx-auto max-w-4xl rounded-3xl bg-white p-4'
-      action='https://formsubmit.co/resendizbautista801@gmail.com'
+      action='https://formsubmit.co/d4c6f844cb05e37500c5661813c521ce'
       method='POST'
     >
       <h2 className='text-center'>Escríbenos</h2>
