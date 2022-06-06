@@ -80,7 +80,9 @@ export default function Header() {
               </Link>
             </div>
             <div>
-              <div className={styles.menu__item}>Contacto</div>
+              <Link href='/contacto/'>
+                <div className={styles.menu__item}>Contacto</div>
+              </Link>
             </div>
             <div>
               <Link href='/blog/'>
