@@ -9,7 +9,7 @@ export default function Jornadas() {
     <div>
       <Header />
       <section>
-        <div className='container mx-auto px-4 py-16 pt-8 sm:pt-16'>
+        <div className='container mx-auto px-4 py-8 sm:pt-16'>
           <div className='mx-auto px-8 text-justify md:max-w-[800px]'>
             <h1 className='mx-auto py-4 text-center sm:mb-12'>
               Jornandas Ambientales
@@ -55,11 +55,11 @@ export default function Jornadas() {
         </div>
       </section>
       <section>
-        <div className='container mx-auto px-8 text-center'>
+        <div className='container mx-auto flex flex-col p-8 text-center gap-8'>
           <h2>Tabla de los paquetes de jornada ambiental</h2>
-          <TablaJornadas>
-            
-          </TablaJornadas>
+          <div className='overflow-auto py-4 lg:mx-auto'>
+            <TablaJornadas />
+          </div>
         </div>
       </section>
       <Footer />

@@ -1,3 +1,31 @@
-.class {
+.table {
+  @apply shadow text-lg;
   background-color: white;
+  display: table;
+  border-collapse: collapse;
+  text-indent: initial;
+  overflow: hidden;
+  border-radius: 1rem;
+  border-spacing: 2px;
+  border: none;
+}
+
+.table .table_header{
+  height: 4rem;
+  font-size: 2rem;
+}
+
+.table td {
+  @apply shadow;
+  padding: 0.5rem 1.5rem;
+}
+
+.table thead{
+  @apply text-xl;
+  font-weight: bold;
+  text-align: center;
+}
+
+.table tbody{
+  text-align: center;
 }
