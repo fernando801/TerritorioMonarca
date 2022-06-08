@@ -21,7 +21,10 @@ export default function MariposaMonarca() {
         <div className='container relative mx-auto rounded-3xl bg-silver-200 py-16 px-4 pt-8 sm:pt-16 lg:-top-40 lg:pb-0'>
           <h1 className='mb-6 p-2 sm:mb-12 lg:p-4'>Mariposa Monarca</h1>
           <div className='grid gap-4 lg:grid-cols-2'>
-            <KeyFact title='Importancia' img='/images/guardianes_logo_bw.png'>
+            <KeyFact
+              title='Importancia'
+              img='/images/mariposa_monarca/importancia.jpg'
+            >
               <ol className='list-decimal pl-4'>
                 <li className='py-1'>
                   La mariposa monarca es un bioindicador demasiado importante,
@@ -40,7 +43,10 @@ export default function MariposaMonarca() {
                 </li>
               </ol>
             </KeyFact>
-            <KeyFact title='Migración' img='/images/guardianes_logo_bw.png'>
+            <KeyFact
+              title='Migración'
+              img='/images/mariposa_monarca/migracion.jpg'
+            >
               <p className='py-1'>
                 La mariposa que sale de EUA y Canadá no es la misma que llega a
                 México. En realidad quien llega es la 5ta generación, la cual
@@ -59,7 +65,10 @@ export default function MariposaMonarca() {
                 fenómeno.
               </p>
             </KeyFact>
-            <KeyFact title='Problema' img='/images/guardianes_logo_bw.png'>
+            <KeyFact
+              title='Problema'
+              img='/images/mariposa_monarca/problema.jpg'
+            >
               <p className='py-1'>
                 En 2014 se manda una alerta internacional, ya que comienza a
                 disminuir la población de mariposas monarcas de 200 millones a
@@ -79,7 +88,7 @@ export default function MariposaMonarca() {
             </KeyFact>
             <KeyFact
               title='Generación Matusalén'
-              img='/images/guardianes_logo_bw.png'
+              img='/images/mariposa_monarca/generacion_matusalen.jpg'
             >
               <p className='py-1'>
                 Normalmente, las mariposas adultas reproductivas viven de cuatro
@@ -100,7 +109,7 @@ export default function MariposaMonarca() {
               </p>
             </KeyFact>
           </div>
-          <div className='bg-whiete sm:mx-auto mt-16 mx-4 sm:w-5/6 rounded-3xl bg-white p-8 text-justify sm:text-center shadow'>
+          <div className='bg-whiete mx-4 mt-16 rounded-3xl bg-white p-8 text-justify shadow sm:mx-auto sm:w-5/6 sm:text-center'>
             <h2 className='mb-8 text-center'> Ciclo de Vida</h2>
             <p>
               Ciclo de vida (oruga, crisálida, mariposa, matusalén) La mariposa
@@ -118,16 +127,12 @@ export default function MariposaMonarca() {
           </div>
         </div>
       </section>
-      <section className='relative rounded-t-3xl bg-clay-300' id='caracteristicas'>
+      <section
+        className='relative rounded-t-3xl bg-clay-300'
+        id='caracteristicas'
+      >
         <div className='container mx-auto py-12 px-6'>
-          <div className='grid items-center gap-8 lg:grid-cols-[1fr_2fr]'>
             <h2 className='py-4 lg:col-start-2'>Características</h2>
-            <ul className='list-disc pl-6 text-xl'>
-              <li>Mariposa</li>
-              <li>Mariposa</li>
-              <li>Mariposa</li>
-              <li>Mariposa</li>
-            </ul>
             <div className='text-justify'>
               <p className='py-2'>
                 Las mariposas monarcas son reconocidas por tener una coloración
@@ -172,7 +177,6 @@ export default function MariposaMonarca() {
                 peso va de un cuarto a tres cuartos de gramo.
               </p>
             </div>
-          </div>
         </div>
       </section>
       <Footer />

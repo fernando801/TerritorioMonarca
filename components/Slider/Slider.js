@@ -55,6 +55,7 @@ export default function Slider({ children }) {
       <div className={styles.container_dots}>
         {Array.from({ length: children.length }).map((item, index) => (
           <div
+            key={`${index}`}
             onClick={() => moveDot(index + 1)}
             className={slideIndex === index + 1 ? `${styles.dot} ${styles.dot_active}` : styles.dot}
           ></div>

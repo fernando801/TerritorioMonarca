@@ -21,8 +21,8 @@ export async function getStaticProps() {
 
 export default function Blog({ posts, recentPosts }) {
   const sliderElements = recentPosts.map((post) => (
-    <Link href={`/blog/posts/${post.slug}`}>
-      <div key={post.id} className='h-full'>
+    <Link key={post.id} href={`/blog/posts/${post.slug}`}>
+      <div className='h-full'>
         <div
           className='relative h-full p-8 brightness-75'
         >

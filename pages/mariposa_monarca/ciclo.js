@@ -8,7 +8,7 @@ const phases = [
   {
     title: 'Fase de huevo',
     thumbnail: '/images/phases/fase_huevo.png',
-    img: '/images/mariposa_monarca.jpg',
+    img: '/images/phases/etapa_huevo.png',
     description: [
       'La hembra se encarga de depositar más de 500 huevecillos en el revés de las hojas de las plantas del género Asclepias, las cuales fueron llamadas así en honor al hijo de Apolo,  Asclepius pues tiene propiedades tanto tóxicas como medicinales y son hierbas perennes, que van desde  60 centímetros a metro y medio de altura.',
       'Estos huevecillos son del tamaño de la cabeza de un alfiler, con un color blanco cremoso y una forma cónica. Normalmente, son puestos unos cuantos huevecillos por planta para reducir la competencia entre larvas por la disponibilidad de alimentos. Esta fase dura de 3 a 6 días dependiendo de las condiciones ambientales.',
@@ -17,7 +17,7 @@ const phases = [
   {
     title: 'Fase de larva',
     thumbnail: '/images/phases/fase_larva.png',
-    img: '/images/mariposa_monarca.jpg',
+    img: '/images/phases/etapa_larva.png',
     description: [
       'De los huevecillos de color blanco nacen las larvas u orugas de color blanco con unas finas estrías de color negro y amarillo anaranjado. Su cuerpo cilíndrico está conformado por trece segmentos. En su cabeza posee un par de antenas las cuales se encargan de guiarla, además de que posee seis pares de ojos; sin embargo, su visión es demasiado pobre.',
       'En esta fase se alimentan de las hojas de la planta Asclepias, las cuales si bien son venenosas para la mayoría de los animales, no lo son para las orugas e incluso este veneno se acumula en sus cuerpos y les sirve como una protección de sus depredadores.',
@@ -33,9 +33,9 @@ const phases = [
     ],
   },
   {
-    title: 'Fase de adulto',
-    thumbnail: '/images/phases/fase_adulto.png',
-    img: '/images/mariposa_monarca.jpg',
+    title: 'Fase adulta',
+    thumbnail: '/images/phases/fase_adulta.png',
+    img: '/images/phases/etapa_adulta.png',
     description: [
       'Una vez que la mariposa se ha formado dentro del capullo, la envoltura se rasga y comienza a salir el adulto. Al momento de salir del capullo, primero comienza liberando las patas y antenas. La mariposa se cuelga con sus alas hacia abajo, y empieza a bombear fluidos a sus alas para que estas se extiendan y se sequen, para que así cuando estas alcancen su firmeza y tamaño normal, pueda realizar su vuelo e incluso reproducirse.'
     ],
