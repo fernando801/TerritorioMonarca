@@ -47,8 +47,8 @@ export default function Footer() {
               <Link href='/como_ayudar/productos/'>
                 <li className='cursor-pointer'>- Productos</li>
               </Link>
-              <Link href='/como_ayudar/paquetes/'>
-                <li className='cursor-pointer'>- Paqutes Monarca</li>
+              <Link href='/como_ayudar/actividades/'>
+                <li className='cursor-pointer'>- Actividades</li>
               </Link>
             </ul>
           </div>

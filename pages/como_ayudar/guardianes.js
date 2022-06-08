@@ -58,7 +58,7 @@ export default function Guardianes() {
               alt='guardianes logo'
             />
           </div>
-          <Link href='/como_ayudar/paquetes/'>
+          <Link href='/como_ayudar/productos/'>
             <div className='pill mx-auto mt-4 cursor-pointer px-8 py-2 font-serif text-xl hover:bg-amber-400 active:scale-95'>
               Conoce Nuestros Paquetes
             </div>
