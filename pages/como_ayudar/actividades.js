@@ -33,7 +33,7 @@ export default function Paquetes() {
               <PaqueteMonarca
                 title={'Jornadas ambientales'}
                 img='/images/mariposa_monarca.jpg'
-                link='/como_ayudar/jornandas'
+                link='/como_ayudar/jornadas'
               >
                 <p>
                   Todos los sábados Fundación Territorio Monarca invita a sus
