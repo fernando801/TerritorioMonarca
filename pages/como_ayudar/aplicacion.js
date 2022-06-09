@@ -18,8 +18,8 @@ export default function Aplicacion() {
               visita a los Santuarios ubicados en Canadá. Dentro de esta
               aplicación se encuentran los siguientes beneficios:
             </p>
- 
-            <ul className='list-disc py-2 pl-6 my-4'>
+
+            <ul className='my-4 list-disc py-2 pl-6'>
               <li className='py-1'>
                 Información acerca de las Mariposas Monarca.
               </li>
@@ -53,7 +53,25 @@ export default function Aplicacion() {
       </section>
       <section>
         <div className='container mx-auto px-8 text-center'>
-          <h2>Está disponible en Google Play y Appstore</h2>
+          <h2 className='py-2'>Está disponible en Google Play y Appstore</h2>
+          <div className='flex gap-10 py-16 mx-auto justify-center flex-wrap'>
+            <a href='https://www.apple.com/app-store/' target='_blank' className='relative w-full max-w-xs cursor-pointer'>
+              <Image
+                src='/images/app/appstore.png'
+                width={2560}
+                height={755}
+                layout='responsive'
+              />
+            </a>
+            <a href='https://play.google.com/' target='_blank' className='relative w-full max-w-xs cursor-pointer'>
+              <Image
+                src='/images/app/google_play.png'
+                width={2560}
+                height={755}
+                layout='responsive'
+              />
+            </a>
+          </div>
         </div>
       </section>
       <Footer />

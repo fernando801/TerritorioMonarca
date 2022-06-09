@@ -50,6 +50,12 @@ export default function Footer() {
               <Link href='/como_ayudar/actividades/'>
                 <li className='cursor-pointer'>- Actividades</li>
               </Link>
+              <Link href='/como_ayudar/jornadas/'>
+                <li className='cursor-pointer'>- Jornadas Ambientales</li>
+              </Link>
+              <Link href='/como_ayudar/aplicacion/'>
+                <li className='cursor-pointer'>- Aplicación</li>
+              </Link>
             </ul>
           </div>
           <div className='flex flex-col gap-2'>
