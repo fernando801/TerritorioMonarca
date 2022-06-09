@@ -2,6 +2,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
+import GuardianesForm from '@/components/GuardianesForm'
 
 export default function Guardianes() {
   return (
@@ -11,7 +12,7 @@ export default function Guardianes() {
         <div className='container mx-auto px-4 py-16 pt-8 sm:pt-16'>
           <div className='mx-auto text-justify md:max-w-[800px]'>
             <h1 className='mx-auto py-4 text-center sm:mb-12'>
-              ¿Qué es un Guardian Monarca?
+              ¿Qué es un Guardián Monarca?
             </h1>
             <p className='py-2 px-6'>
               Es una estrategia para generar participación activa a nivel
@@ -60,9 +61,14 @@ export default function Guardianes() {
           </div>
           <Link href='/como_ayudar/productos/'>
             <div className='pill mx-auto mt-4 cursor-pointer px-8 py-2 font-serif text-xl hover:bg-amber-400 active:scale-95'>
-              Conoce Nuestros Paquetes
+              Conoce nuestros paquetes
             </div>
           </Link>
+        </div>
+      </section>
+      <section>
+        <div className='container mx-auto px-8 py-16'>
+          <GuardianesForm />
         </div>
       </section>
       <Footer />

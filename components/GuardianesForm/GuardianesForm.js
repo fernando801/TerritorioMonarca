@@ -1,15 +1,16 @@
-export default function ContactForm() {
+export default function GuardianesForm() {
   return (
     <form
       className='mx-auto max-w-4xl rounded-3xl bg-white p-4'
       action='https://formsubmit.co/d4c6f844cb05e37500c5661813c521ce'
       method='POST'
     >
-      <h2 className='text-center'>Escríbenos</h2>
+      <h2 className='text-center'>Conviértete en Guardián Monarca</h2>
+      <input type="hidden" name="_subject" value="Quiero ser un Guardián Monarca"></input>
       <input
         type='hidden'
         name='_next'
-        value='https://territorio-monarca.vercel.app/contacto/'
+        value='https://territorio-monarca.vercel.app/como_ayudar/guardianes/'
       />
       <label htmlFor='name' className='mt-2 block p-2'>
         Nombre:
@@ -33,15 +34,16 @@ export default function ContactForm() {
         placeholder='tucorreo@ejemplo.com'
         required
       />
-      <label htmlFor='_subject' className='mt-2 block p-2'>
-        Asunto:
+      <label htmlFor='phone' className='mt-2 block p-2'>
+        Teléfono:
       </label>
       <input
         className='block w-full rounded-md bg-clay-200 p-2'
-        type='text'
-        name='_subject'
-        id='_subject'
-        placeholder='Quiero ayudar'
+        type='tel'
+        name='phone'
+        id='phone'
+        pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+        placeholder='800-808-8080 (con guiones)'
         required
       />
       <label htmlFor='message' className='mt-2 block p-2'>
@@ -53,13 +55,12 @@ export default function ContactForm() {
         id='message'
         cols='30'
         rows='10'
-        placeholder='Escribe tu mensaje aquí'
-        required
+        placeholder='Opcional'
       ></textarea>
       <input
         type='hidden'
         name='_autoresponse'
-        value='Gracias por enviar tu mensaje a Territorio Monarca'
+        value='Gracias por realizar tu solicitud para convertirte en un Guardián Monarca'
       />
       <input
         className='pill mx-auto mt-4 block text-2xl font-bold sm:px-8 sm:text-3xl'
