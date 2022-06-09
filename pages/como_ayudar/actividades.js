@@ -60,7 +60,7 @@ export default function Paquetes() {
         <article className='container mx-auto p-4'>
           <h2 className='p-8'>Aliados y Empresas</h2>
           <div className='flex justify-center rounded-3xl bg-clay-300'>
-            <div className='flex gap-8 overflow-auto p-8 lg:gap-20 2xl:gap-20'>
+            <div className='flex gap-8 overflow-auto p-8 2xl:gap-20'>
               <PaqueteMonarca
                 title='Ser un aliado estratégico'
                 img='/images/mariposa_monarca.jpg'
