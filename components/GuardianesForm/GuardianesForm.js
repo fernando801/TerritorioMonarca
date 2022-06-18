@@ -1,12 +1,18 @@
+const formEmail = process.env.NEXT_PUBLIC_GUARDIANES_FORM_EMAIL
+
 export default function GuardianesForm() {
   return (
     <form
       className='mx-auto max-w-4xl rounded-3xl bg-white p-4'
-      action='https://formsubmit.co/d4c6f844cb05e37500c5661813c521ce'
+      action={`https://formsubmit.co/${formEmail}`}
       method='POST'
     >
       <h2 className='text-center'>Conviértete en Guardián Monarca</h2>
-      <input type="hidden" name="_subject" value="Quiero ser un Guardián Monarca"></input>
+      <input
+        type='hidden'
+        name='_subject'
+        value='Quiero ser un Guardián Monarca'
+      ></input>
       <input
         type='hidden'
         name='_next'
@@ -42,7 +48,7 @@ export default function GuardianesForm() {
         type='tel'
         name='phone'
         id='phone'
-        pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+        pattern='[0-9]{3}-[0-9]{3}-[0-9]{4}'
         placeholder='800-808-8080 (con guiones)'
         required
       />
