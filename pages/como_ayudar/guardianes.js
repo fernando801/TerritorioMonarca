@@ -3,8 +3,19 @@ import Image from 'next/image'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import GuardianesForm from '@/components/GuardianesForm'
+import { getContadorGuadianes } from '@/lib/api'
 
-export default function Guardianes() {
+export async function getStaticProps() {
+  const contador = (await getContadorGuadianes()) || { count: 0 }
+
+  return {
+    props: {
+      contador,
+    },
+  }
+}
+
+export default function Guardianes({ contador }) {
   return (
     <div>
       <Header />
@@ -29,7 +40,9 @@ export default function Guardianes() {
           <div className='mx-auto w-fit rounded-3xl bg-white py-8 px-16 shadow sm:my-8'>
             <h2 className='py-6'>Ya Somos</h2>
             <div>
-              <p className='text-[5rem] font-bold text-amber-500'>117</p>
+              <p className='text-[5rem] font-bold text-amber-500'>
+                {contador.count}
+              </p>
             </div>
             <h2 className='py-6'>Guardianes monarca</h2>
           </div>

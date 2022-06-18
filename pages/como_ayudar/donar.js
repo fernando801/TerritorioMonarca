@@ -1,8 +1,23 @@
 import Image from 'next/image'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
+import { getDonarInfo } from '@/lib/api'
 
-export default function Donar() {
+export async function getStaticProps(){
+  const donarInfo = await getDonarInfo() || {
+    name: "Donar",
+    description: "Añada una descripción en el CMS",
+    url: "https://www.mercadopago.com.mx/"
+  }
+
+  return {
+    props: {
+      donarInfo
+    }
+  }
+}
+
+export default function Donar({ donarInfo }) {
   return (
     <div>
       <Header />
@@ -19,20 +34,13 @@ export default function Donar() {
             ¿Por qué necesitamos de ti?
           </h1>
           <p className='px-6 py-2 text-justify'>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
-            aliquam nam dolore quisquam fugit alias minima autem dolor
-            temporibus laudantium cumque, harum, est repudiandae vero soluta
-            eveniet ratione repellendus quaerat. Lorem ipsum dolor sit amet
-            consectetur adipisicing elit. Quis nihil vero possimus
-            reprehenderit? A, vitae temporibus. Cumque, rem porro perferendis,
-            quae sint nihil dolorum officia, doloremque magni mollitia ex
-            eveniet.
+            {donarInfo.description}
           </p>
         </div>
       </section>
       <section>
         <div className='container mx-auto py-12 px-8 text-center text-3xl font-bold text-mustard-500 sm:text-4xl'>
-          <a href='https://www.mercadopago.com.mx/' target='_blank'>
+          <a href={donarInfo.url} target='_blank'>
             <h1 className='pill mx-auto mt-4 cursor-pointer px-8 py-2 font-serif hover:bg-amber-400 active:scale-95 hover:scale-105 transition-all duration-500'>
               Realiza tu Donativo
             </h1>
