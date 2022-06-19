@@ -1,4 +1,5 @@
 const formEmail = process.env.NEXT_PUBLIC_CONTACT_FORM_EMAIL
+const domain = process.env.NEXT_PUBLIC_DOMAIN
 
 export default function ContactForm() {
   return (
@@ -11,7 +12,7 @@ export default function ContactForm() {
       <input
         type='hidden'
         name='_next'
-        value='https://territorio-monarca.vercel.app/contacto/'
+        value={`${domain}/contacto/`}
       />
       <label htmlFor='name' className='mt-2 block p-2'>
         Nombre:
